@@ -18,7 +18,7 @@ export class AppSignupService {
 
     console.log(body)
 
-    return this.http.post('http://localhost:3000/api/users', body, {headers: headers} )
+    return this.http.post('https://nameless-crag-44986.herokuapp.com/api/users/', body, {headers: headers})
       .map((response: Response) => response.json())
       .subscribe((data: any) => console.log(data));
   }

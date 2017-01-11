@@ -6,14 +6,17 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppSignupComponent } from './app-signup/app-signup.component';
 import { AppHomeComponent } from './app-home/app-home.component';
+import { AppSignupService } from './app-signup/services/app-signup.service';
 
 import { routing } from './app.routing';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AppSignupComponent,
-    AppHomeComponent
+    AppHomeComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,7 @@ import { routing } from './app.routing';
     routing,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AppSignupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

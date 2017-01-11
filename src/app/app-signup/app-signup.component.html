@@ -1,28 +1,54 @@
 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div>
+
     <div class="form-group">
-      <label for="username">Username</label>
+      <label for="firstname">firstname</label>
       <input type="text" 
              class="form-control" 
-             id="username" 
-             formControlName="username">
+             id="firstname" 
+             formControlName="firstname">
     </div>
 
     <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" 
+      <label for="lastname">lastname</label>
+      <input type="text" 
              class="form-control" 
-             id="password" 
-             formControlName="password">
+             id="lastname" 
+             formControlName="lastname">
     </div>
 
     <div class="form-group">
-      <label for="email">email</label>
+      <label for="email">Email</label>
       <input type="email" 
              class="form-control" 
              id="email" 
              formControlName="email">
+    </div>
+
+    <div class="form-group">
+      <label for="age">age</label>
+      <input type="number" 
+             class="form-control" 
+             id="age" 
+             formControlName="age">
+    </div>
+
+    <div class="form-group">
+      <label for="handle">handle</label>
+      <input type="text" 
+             class="form-control" 
+             id="handle" 
+             formControlName="handle">
+    </div>
+
+    <div class="form-group">
+      <label for="bio">bio</label>
+      <textarea type="text" 
+             class="form-control" 
+             id="bio" 
+             formControlName="bio">
+      </textarea>
     </div>
 
   </div>

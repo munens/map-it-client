@@ -39,13 +39,13 @@ export class AppSignupComponent implements OnInit {
     const user = new User(
       this.form.get('firstname').value, 
       this.form.get('lastname').value, 
-      this.form.get('email').value, 
+      this.form.get('email').value,
+      this.form.get('age').value,  
       this.form.get('handle').value, 
-      this.form.get('age').value, 
       this.form.get('bio').value
     );
     this.signUpService.addUser(user);
-    console.log('yes');
+    
   }
 
 }
